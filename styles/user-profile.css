@@ -1,0 +1,217 @@
+/*--------------------------------------------------------------------*/
+/*--------------------------Profile Page------------------------------*/
+/*--------------------------------------------------------------------*/
+/*global*/
+.prof-con{
+    padding: 0 0 0 30px;
+}
+/*aside*/
+.prof-aside{
+    margin-top: 30px;
+}
+.user-avatar{
+    overflow: hidden;
+    width: 280px;
+    height: 280px;
+    margin: 0 0 15px 0;
+}
+.user-avatar img{
+    width: 100%;
+}
+.prof-soc{
+    overflow: hidden;
+    text-align: center;
+    margin: 0 0 26px 0;
+}
+.prof-soc li{
+    display: inline-block;
+}
+.prof-soc a{
+    overflow: hidden;
+    display: block;
+    width: 41px;
+    height: 41px;
+    background: url(../images/spritebox-profile-soc.png) no-repeat;
+    text-indent: -999px;
+}
+.prof-soc .city-phone a{
+    background-position: 0px 9px;
+}
+.prof-soc .skype a{
+    background-position: -49px 10px;
+}
+.prof-soc .email a{
+    background-position: -98px 12px;
+}
+.prof-soc .facebook a{
+    background-position: -145px 9px;
+}
+.prof-soc .vkontakte a{
+    background-position: -192px 14px;
+}
+.prof-soc .city-phone a:hover{
+    background-position: left bottom;
+}
+.prof-soc .skype a:hover{
+    background-position: -49px bottom;
+}
+.prof-soc .email a:hover{
+    background-position: -98px bottom;
+}
+.prof-soc .facebook a:hover{
+    background-position: -145px bottom;
+}
+.prof-soc .vkontakte a:hover{
+    background-position: -192px bottom;
+}
+/*===============================*/
+.prof-content .prof-dream-img{
+    float: left;
+    margin: 0 14px 0 0;    
+}
+.prof-content .prof-dream-name{
+    overflow: hidden;
+    margin: 0 0 8px 0;
+}
+.prof-content .prof-dream-name a{
+    font: 18px 'DaxPro-Bold';
+    line-height: 1;    
+}
+.prof-content .prof-dream-name .delete-dream{
+    display: none;
+}
+.prof-content .prof-dream-name:hover > .delete-dream{
+    display: inline-block;
+}
+.prof-content .prof-dream-about{
+    overflow: hidden;
+    font-size: 14px;
+    line-height: 1.2;
+}
+.prof-content{
+    overflow: hidden;
+    margin: 30px 0 0 0;
+    padding: 0 30px 0 0;
+}
+.prof-content .user-name{
+    float: left;
+    font: 30px 'DaxPro-Bold';
+    line-height: 1;
+}
+.prof-content .user-prof-edit{
+    float: right;
+    width: 124px;
+    height: 29px;
+    margin: 0 -30px 0 0;
+    padding: 6.5px 0 0 31px;
+    background: url(../images/profile-edit-bg.png) no-repeat;
+    font: 14px 'DaxPro-Bold';
+    color: #fff;
+}
+.prof-content time{
+    overflow: hidden;
+    display: block;
+    padding: 12px 0 0 20px;
+}
+.prof-content .user-about{
+    clear: both;
+    margin: 20px 0 29px 0;
+    
+}
+.prof-content .user-about p{
+    margin: 0 0 21px 0;
+    font-size: 14px;
+    word-spacing: 2px;
+    line-height: 1.2;
+}
+.prof-content h2{
+    font: 14px 'DaxPro-Bold';
+    text-transform: uppercase;
+    color: #ed431d;
+}
+.prof-content .user-projects-title{
+    float: left;
+}
+.prof-content .user-projects-nav{
+    float: right;
+    overflow: hidden;
+}
+.prof-content .user-projects-nav li{
+    float: left;
+    margin: 0 0 10px 15px;
+}
+.prof-content .user-projects-nav li.active a{
+    color: #ed431d;
+    cursor: default;
+}
+.prof-content .user-projects{
+    clear: both;
+    overflow: hidden;
+    margin: 0 0 29px -30px;
+    border-top: 1px solid #E1E1E1;
+}
+.prof-content .user-projects li{
+    float: left;
+    overflow: hidden;
+    width: 279.5px;
+    max-height: 73px;
+    margin: 15px 0 0 30px;
+}
+.prof-content .party-projects{
+    margin: 6px 0 31px 0;
+    border-top: 1px solid #E1E1E1;    
+}
+.prof-content .party-projects > li{
+    margin: 16px 0 0 0;
+}
+.prof-content .single-project > li:first-child{
+    float: left;
+    position: relative;
+    width: 367px;
+    max-height: 73px;
+    margin: 0 30px 0 0;
+}
+.prof-content .single-project > li:last-child{
+    overflow: hidden;
+}
+.prof-content .single-project > li span{
+    position: absolute;
+    top: -10px;
+    left: 63px;
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: url(../images/dream-play.png) no-repeat;
+}
+.prof-content .promise {
+    margin: 2px 0 2px 0;
+    font: 14px 'DaxPro-Bold';
+}
+.prof-content .promise-list{
+    margin-left: 14px;
+    list-style-image: url(../images/list-marker.png);
+}
+.prof-content .promise-list li {
+    margin: 0 0 3px 0;
+    font-size: 14px;
+}
+.prof-content .prof-favs{
+    overflow: hidden;
+    margin: 6px 0 60px -30px;
+    border-top: 1px solid #E1E1E1;    
+}
+.prof-content .prof-favs li{
+    float: left;
+    overflow: hidden;
+    width: 279.5px;
+    max-height: 73px;
+    margin: 15px 0 0 30px;
+}
+.prof-content .delete-dream{
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    margin: 0 0 2px 11px;
+    background: url(../images/close-button-bg.png)no-repeat;
+    cursor: pointer;
+}

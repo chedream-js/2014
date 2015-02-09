@@ -1,0 +1,127 @@
+/*--------------------------------------------------------------------*/
+/*---------------------------Search Page------------------------------*/
+/*--------------------------------------------------------------------*/
+.search-content{
+    min-height: 300px;
+}
+.search-page-title{
+    float: left;
+    margin: 27px 0 0 0;
+    font-size: 30px;
+}
+.search-page-title strong{
+    font: 30px 'DaxPro-Bold';
+}
+/*search-groups*/
+.search-groups{
+    float: right;
+    overflow: hidden;
+}
+.search-groups li{
+    float: left;
+    text-align: center;
+}
+.search-groups li:hover{
+    background: #F2F2F2;
+}
+.search-groups a{
+    display: block;
+    width: 77px;
+    height: 77px;
+    padding: 47px 0 0 0;
+    background: url(../images/spritebox-search-groups.png) no-repeat;
+}
+.search-groups .dreams a{
+    background-position: -155px 21px;
+}
+.search-groups .members a{
+    background-position: -58px 18px;
+}
+.search-groups a:hover{
+    color: #464646;
+}
+.search-groups .dreams.active a{
+    color: #dd3509;
+    background: url(../images/spritebox-search-groups.png) -239px 21px  no-repeat;
+}
+.search-groups .members.active a{
+    color: #dd3509;
+    background: url(../images/spritebox-search-groups.png) 28px 18px  no-repeat;
+}
+/*search-categories*/
+.search-categories{
+    clear: both;
+    overflow: hidden;
+    padding: 0 10px 0 0;
+    border-top: 1px solid #E1E1E1;
+    border-bottom: 1px solid #E1E1E1;
+}
+.search-categories li{
+    float: right;
+    margin: 10px 0 12px 16px;
+}
+.search-categories .active a{
+    color: #dd3509; 
+}
+/*search-found*/
+.search-found{
+    overflow: hidden;
+    margin: 0 0 30px -30px;
+}
+.search-found li{
+    float: left;
+    overflow: hidden;
+    width: 435px;
+    height: 89px;
+    margin: 15px 0 0 30px;
+    border-bottom: 1px solid #E1E1E1;
+}
+.search-found img{
+    float: left;
+    margin: 0 16px 0 0;
+}
+.search-found h2{
+    margin: 0 0 8px 0;
+}
+.search-found h2 a{
+    overflow: hidden;
+    font: 18px 'DaxPro-Bold';
+    line-height: 1;
+}
+.search-found p{
+    overflow: hidden;
+    font-size: 14px;
+    line-height: 1.2;
+}
+.search-found .title-mark{
+    background: none;
+    font: 18px 'DaxPro-Bold';
+    color: #f2602c;
+}
+.search-found .text-mark{
+    background: none;
+    font-family:'DaxPro-Bold';
+    color: #f2602c;
+}
+/*pages nav*/
+.more-dreams{
+    overflow: hidden;
+    width: 120px;
+    margin: 0 auto 30px;
+    text-align: center;
+}
+.more-dreams a{
+    display: block;
+    font-size: 16px;
+}
+.more-dreams span{
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    margin:  8px 2px 0;
+    border-radius: 50%;
+    background: #5A5A5A;
+}
+.more-dreams a:hover > span{
+    background: #F2602C;
+}

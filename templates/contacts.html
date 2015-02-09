@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Index</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/FAQ.css">
+    <link rel="stylesheet" href="styles/search.css">
+    <link rel="stylesheet" href="styles/contacts.css">
+</head>
+
+<body>
+<div class="wrapper">
+    <header>
+        <h1><a class="logo" ui-sref="home"><img src="images/logo.png" alt="Черкаська мрія">Черкаська мрія</a></h1>
+        <nav>
+            <ul class="main-menu">
+                <li><a ui-sref="faq">FAQ</a></li>
+                <li><a ui-sref="contacts">Контакти</a></li>
+            </ul>
+        </nav>
+        <div class="search">
+            <form action="#" method="post">
+                <input type="submit" value="">
+                <input type="text" name="search_text" class="search-field" placeholder="Geekstarte">
+            </form>
+            <a class="search-link" href="#">Пошук</a>
+        </div>
+        <ul class="social">
+            <li>
+                <a href="#"><span class="ico-fb"></span></a>
+            </li>
+            <li>
+                <a href="#"><span class="ico-vk"></span></a>
+            </li>
+            <li>
+                <a href="#"><span class="ico-gplus"></span></a>
+            </li>
+            <li>
+                <a href="#"><span class="ico-tw"></span></a>
+            </li>
+        </ul>
+        <span class="social-title">Увійти через</span>
+        <ul class="account-bar">
+            <li>
+                <a class="user-photo" href="#"><img src="images/user-photo.jpg" alt="User photo"></a>
+            </li>
+            <li>
+                <a class="profile" href="#">profile</a>
+            </li>
+            <li>
+                <a class="user-msg" href="#">messages</a>
+            </li>
+            <li class="show-dreams">
+                <a class="user-dreams" href="#">user dreams</a>
+                <ul class="user-dreams-list empty-list">
+                    <li class="dream-item"><a href="#">Мрія 1</a></li>
+                    <li class="dream-item"><a href="#">Мрія 2</a></li>
+                    <li class="dream-item"><a href="#">Мрія 3</a></li>
+                    <li class="close-block"><a href="#" class="close"><span class="ico-cancel"></span></a></li>
+                    <li class="no-user-dreams"><p>Ви не додали жодної мрії</p></li>
+                </ul>
+            </li>
+            <li>
+                <a class="logout" href="#">logout</a>
+            </li>
+        </ul>
+        <a class="add-dream" href="#">Додати мрію</a>
+    </header>
+
+    <div class="bg-pages">
+        <section class="feedback">
+            <h1 class="contacts-page-title">Зворотній зв’язок</h1>
+            <dl>
+                <dt class="city-com">Міський звязок<span></span></dt>
+                <dd><a href="tel:0472332211" title="">(0472) 33-22-11</a></dd>
+                <dt class="life-com">Life<span></span></dt>
+                <dd><a href="tel:0933333333" title="">(093) 333-33-33</a></dd>
+                <dt class="mts-com">MTC<span></span></dt>
+                <dd><a href="tel:0994843333" title="">(099) 484-33-33</a></dd>
+                <dt class="kievstar-com">Kyivstar<span></span></dt>
+                <dd><a href="tel:0978413333" title="">(097) 841-33-33</a></dd>
+                <dt class="skype">Skype<span></span></dt>
+                <dd><a href="skype:neuhatska.svitlana?chat" title="">neuhatska.svitlana</a></dd>
+                <dt class="icq-link">ICQ<span></span></dt>
+                <dd><a href="http://download.icq.com/icq2go/flicq.html" title="">999-888-777</a></dd>
+            </dl>
+        </section>
+        <section class="write-to-us">
+            <h2 class="write-to-us-title">Пишіть нам</h2>
+            <form method="get">
+                <fieldset class="write-to-us-form">
+                    <ul>
+                        <li class="email"><label for="email">Адреса для зворотнього зв'зку</label><input type="email" id="email" name="email" /></li>
+                        <li class="mail-subject"><label for="mail-subject">Тема листа</label><input type="text" id="mail-subject" name="mail-subject" /></li>
+                        <li class="text-subject"><label for="text-subject">Текст повідомлення</label><textarea id="text-subject" name="text-subject" cols="30" rows="10"></textarea></li>
+                        <li class="captcha"><label for="captcha">Капча</label><input type="text" id="captcha" name="captcha" /><img src="images/contacts-captcha.jpg" alt="captcha"></li>
+                        <li class="enter-form"><input class="red-button" type="submit" value="Надіслати" /></li>
+                    </ul>
+                </fieldset>
+            </form>
+        </section>
+    </div>
+
+    <div ui-view="footer"></div>
+</div>
+</body>
+</html>
