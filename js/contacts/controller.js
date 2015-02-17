@@ -1,4 +1,6 @@
-angular.module('contacts.controller', ['contacts.model'])
-    .controller('ContactsCtrl', function($scope) {
-        console.log("Contact")
+angular.module('contacts.controller', [
+    'contacts.model'
+])
+    .controller('ContactsCtrl', function($scope, contacts) {
+        $scope.info = contacts.getInfo();
     });

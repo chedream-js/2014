@@ -39,8 +39,8 @@
     height: 40px;
     border-bottom: 1px solid #E1E1E1;
 }
-.feedback dd a{
-    font-size: 16px;
+.feedback dd:hover {
+    color: #F2602C;
 }
 .feedback span{
     position: absolute;

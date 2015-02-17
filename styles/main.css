@@ -537,16 +537,13 @@ ul.main-menu li:last-child {
     margin: 0 auto;
     overflow: hidden;
 }
-.carosel-inner ul {
+.carosel-inner .carosel-wrapper {
     position: relative;
     width: 2000em;
 }
-.carosel-inner li {
+.carosel-inner .active {
     float: left;
     position: relative;
-}
-.carosel-inner .dream-info {
-    display: none;
 }
 .carosel-inner .active .dream-info {
     position: absolute;

@@ -1,54 +1,42 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-    <title>Index</title>
-    <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/FAQ.css">
-    <link rel="stylesheet" href="styles/search.css">
-    <link rel="stylesheet" href="styles/contacts.css">
-</head>
+<div class="bg-pages">
+    <section class="feedback">
+        <h1 class="contacts-page-title">Зворотній зв’язок</h1>
+        <dl>
+            <dt class="city-com">Міський звязок<span></span></dt>
+            <dd>{{info.number}}</dd>
+            <dt class="life-com">Life<span></span></dt>
+            <dd>{{info.life}}</dd>
+            <dt class="mts-com">MTC<span></span></dt>
+            <dd>{{info.mtc}}</dd>
+            <dt class="kievstar-com">Kyivstar<span></span></dt>
+            <dd>{{info.kyivstar}}</dd>
+            <dt class="skype">Skype<span></span></dt>
+            <dd>{{info.skype}}</dd>
+            <dt class="icq-link">ICQ<span></span></dt>
+            <dd>{{info.icq}}</dd>
+        </dl>
+    </section>
+    <section class="write-to-us">
+        <h2 class="write-to-us-title">Пишіть нам</h2>
 
-<body>
-<div class="wrapper">
-    <ng-include src="'templates/header.html'"></ng-include>
-
-    <div class="bg-pages">
-        <section class="feedback">
-            <h1 class="contacts-page-title">Зворотній зв’язок</h1>
-            <dl>
-                <dt class="city-com">Міський звязок<span></span></dt>
-                <dd><a href="tel:0472332211" title="">(0472) 33-22-11</a></dd>
-                <dt class="life-com">Life<span></span></dt>
-                <dd><a href="tel:0933333333" title="">(093) 333-33-33</a></dd>
-                <dt class="mts-com">MTC<span></span></dt>
-                <dd><a href="tel:0994843333" title="">(099) 484-33-33</a></dd>
-                <dt class="kievstar-com">Kyivstar<span></span></dt>
-                <dd><a href="tel:0978413333" title="">(097) 841-33-33</a></dd>
-                <dt class="skype">Skype<span></span></dt>
-                <dd><a href="skype:neuhatska.svitlana?chat" title="">neuhatska.svitlana</a></dd>
-                <dt class="icq-link">ICQ<span></span></dt>
-                <dd><a href="http://download.icq.com/icq2go/flicq.html" title="">999-888-777</a></dd>
-            </dl>
-        </section>
-        <section class="write-to-us">
-            <h2 class="write-to-us-title">Пишіть нам</h2>
-            <form method="get">
-                <fieldset class="write-to-us-form">
-                    <ul>
-                        <li class="email"><label for="email">Адреса для зворотнього зв'зку</label><input type="email" id="email" name="email" /></li>
-                        <li class="mail-subject"><label for="mail-subject">Тема листа</label><input type="text" id="mail-subject" name="mail-subject" /></li>
-                        <li class="text-subject"><label for="text-subject">Текст повідомлення</label><textarea id="text-subject" name="text-subject" cols="30" rows="10"></textarea></li>
-                        <li class="captcha"><label for="captcha">Капча</label><input type="text" id="captcha" name="captcha" /><img src="images/contacts-captcha.jpg" alt="captcha"></li>
-                        <li class="enter-form"><input class="red-button" type="submit" value="Надіслати" /></li>
-                    </ul>
-                </fieldset>
-            </form>
-        </section>
-    </div>
-
-    <ng-include src="'templates/footer.html'"></ng-include>
+        <form method="get">
+            <fieldset class="write-to-us-form">
+                <ul>
+                    <li class="email"><label for="email">Адреса для зворотнього зв'зку</label><input type="email"
+                                                                                                     id="email"
+                                                                                                     name="email"/></li>
+                    <li class="mail-subject"><label for="mail-subject">Тема листа</label><input type="text"
+                                                                                                id="mail-subject"
+                                                                                                name="mail-subject"/>
+                    </li>
+                    <li class="text-subject"><label for="text-subject">Текст повідомлення</label><textarea
+                            id="text-subject" name="text-subject" cols="30" rows="10"></textarea></li>
+                    <li class="captcha"><label for="captcha">Капча</label><input type="text" id="captcha"
+                                                                                 name="captcha"/><img
+                            src="images/contacts-captcha.jpg" alt="captcha"></li>
+                    <li class="enter-form"><input class="red-button" type="submit" value="Надіслати"/></li>
+                </ul>
+            </fieldset>
+        </form>
+    </section>
 </div>
-</body>
-</html>
