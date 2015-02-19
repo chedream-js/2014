@@ -1,0 +1,70 @@
+/*--------------------------------------------------------------------*/
+/*------------------------------FAQ Page------------------------------*/
+/*--------------------------------------------------------------------*/
+.faq-page-title{
+    padding: 20px 0;
+    border-bottom: 1px solid #E1E1E1;
+    text-align: center;
+    font: 30px 'DaxPro-Bold';
+}
+/*aside*/
+.faq-aside li{
+    padding: 11px 0 11px 27px;
+    border-bottom: 1px solid #E1E1E1;
+    background: url(../images/list-style-faq.png) left center no-repeat;
+}
+.faq-aside .active{
+    background: url(../images/list-style-faq-first.png) left center no-repeat;
+}
+.faq-aside a{
+    display: block;
+    margin: 0 10px 0 0;
+    line-height: 1.2;
+}
+.faq-aside a:hover{
+    background: url(../images/arrow-left-faq-hover.png) right center no-repeat;
+}
+/*faq content*/
+.faq-content{
+    min-width: 280px;
+    overflow: hidden;
+    margin: 20px 0 0 0;
+}
+.faq-question{
+    overflow: hidden;
+    margin: 0 0 22px 0;
+}
+.faq-question dt{
+    float: left;
+    margin: 0 5px 0 0;
+    font: 16px 'DaxPro-Bold';
+    line-height: 1.2;
+	color: #f2602c;
+}
+.faq-question dd{
+    margin: 0 0 3px 0;
+    font: 16px 'DaxPro-Bold';
+    word-break: break-all;
+    line-height: 1.2;
+}
+.faq-reply{
+    overflow: hidden;
+    margin: 0 0 50px 0;
+}
+.faq-reply dt{
+    float: left;
+    margin: 0 5px 0 0;
+    font: 16px 'DaxPro-Bold';
+    line-height: 1.2;
+	color: #37acb1;
+}
+.faq-reply dd{
+    word-break: break-all;
+    line-height: 1.3;
+}
+.faq-reply dd p{
+    margin: 0 0 20px 0;
+}
+.faq-reply dd p:last-child{
+    margin: 0;
+}

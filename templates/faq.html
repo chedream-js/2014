@@ -1,0 +1,26 @@
+<div class="bg-pages faq-page" ng-init="chosenNumber = 0">
+    <h1 class="faq-page-title">Регламент та поради</h1>
+    <aside class="g-aside faq-aside">
+        <ul>
+            <li ng-repeat="quest in questions"
+                ng-click="changeChosenNumber(quest)"
+                ng-class="questions[chosenNumber].id === quest.id ? 'active' : ''">
+
+                <a href="" title="">
+                    {{quest.title}}
+                </a>
+            </li>
+        </ul>
+    </aside>
+
+    <section class="faq-content">
+        <dl class="faq-question">
+            <dt>Питання:</dt>
+            <dd>{{questions[chosenNumber].question}}</dd>
+        </dl>
+        <dl class="faq-reply">
+            <dt>Відповідь:</dt>
+            <dd>{{questions[chosenNumber].answer}}</dd>
+        </dl>
+    </section>
+</div>

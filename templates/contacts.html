@@ -1,0 +1,42 @@
+<div class="bg-pages">
+    <section class="feedback">
+        <h1 class="contacts-page-title">Зворотній зв’язок</h1>
+        <dl>
+            <dt class="city-com">Міський звязок<span></span></dt>
+            <dd>{{info.number}}</dd>
+            <dt class="life-com">Life<span></span></dt>
+            <dd>{{info.life}}</dd>
+            <dt class="mts-com">MTC<span></span></dt>
+            <dd>{{info.mtc}}</dd>
+            <dt class="kievstar-com">Kyivstar<span></span></dt>
+            <dd>{{info.kyivstar}}</dd>
+            <dt class="skype">Skype<span></span></dt>
+            <dd>{{info.skype}}</dd>
+            <dt class="icq-link">ICQ<span></span></dt>
+            <dd>{{info.icq}}</dd>
+        </dl>
+    </section>
+    <section class="write-to-us">
+        <h2 class="write-to-us-title">Пишіть нам</h2>
+
+        <form method="get">
+            <fieldset class="write-to-us-form">
+                <ul>
+                    <li class="email"><label for="email">Адреса для зворотнього зв'зку</label><input type="email"
+                                                                                                     id="email"
+                                                                                                     name="email"/></li>
+                    <li class="mail-subject"><label for="mail-subject">Тема листа</label><input type="text"
+                                                                                                id="mail-subject"
+                                                                                                name="mail-subject"/>
+                    </li>
+                    <li class="text-subject"><label for="text-subject">Текст повідомлення</label><textarea
+                            id="text-subject" name="text-subject" cols="30" rows="10"></textarea></li>
+                    <li class="captcha"><label for="captcha">Капча</label><input type="text" id="captcha"
+                                                                                 name="captcha"/><img
+                            src="images/contacts-captcha.jpg" alt="captcha"></li>
+                    <li class="enter-form"><input class="red-button" type="submit" value="Надіслати"/></li>
+                </ul>
+            </fieldset>
+        </form>
+    </section>
+</div>

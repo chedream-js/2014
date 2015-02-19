@@ -1,0 +1,97 @@
+<ui-carousel></ui-carousel>
+<section class="main-content">
+    <ul class="dreams-preview">
+        <li ng-repeat="dream in dreams">
+            <span class="favorite"></span>
+
+            <h3>
+                <a href="#">{{dream.title}}</a>
+            </h3>
+
+            <div class="dreams-preview-container">
+                <div class="owner">
+                    <img ng-src="{{dream.avatar}}" alt="Author avatar">
+
+                    <p><a href="#">{{dream.author}}</a></p>
+                </div>
+                <span class="triangle"></span>
+                <a href="#"><img class="img-thumbnail" ng-src="{{dream.picture}}" alt="Dream preview image"></a>
+
+                <div class="dreams-rank">
+            <span class="supported">
+                <span>{{dream.favorites_count}}</span>
+                {{dream.favorites_count_word}}
+            </span>
+            <span class="rating">
+                Рейтинг
+                <span>{{dream.rating}}</span>
+            </span>
+                </div>
+            </div>
+            <div class="work-progress">
+                <div class="finance" data-pct="100">
+                    <svg class="svg" width="60" height="60" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                        <circle r="25" cx="30" cy="30" fill="transparent" stroke-dasharray="157.079633"
+                                stroke-dashoffset="0"></circle>
+                        <circle class="bar" r="25" cx="30" cy="30" fill="transparent" stroke-dasharray="157.079633"
+                                stroke-dashoffset="0"></circle>
+                    </svg>
+                </div>
+                <div class="instruments" data-pct="100">
+                    <svg class="svg" width="60" height="60" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                        <circle r="25" cx="30" cy="30" fill="transparent" stroke-dasharray="157.079633"
+                                stroke-dashoffset="0"></circle>
+                        <circle class="bar" r="25" cx="30" cy="30" fill="transparent" stroke-dasharray="157.079633"
+                                stroke-dashoffset="0"></circle>
+                    </svg>
+                </div>
+                <div class="people" data-pct="100">
+                    <svg class="svg" width="60" height="60" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                        <circle r="25" cx="30" cy="30" fill="transparent" stroke-dasharray="157.079633"
+                                stroke-dashoffset="0"></circle>
+                        <circle class="bar" r="25" cx="30" cy="30" fill="transparent" stroke-dasharray="157.079633"
+                                stroke-dashoffset="0"></circle>
+                    </svg>
+                </div>
+            </div>
+            <a class="btn-support" href="#">Підтримати</a>
+        </li>
+    </ul>
+    <span class="ico-spin5 animate-spin"></span>
+</section>
+
+<div class="popup popup-login" id="popup-login">
+    <div class="popup-content">
+        <a class="close" href="#"><span class="ico-cancel"></span></a>
+
+        <p>Вам необхідно авторизуватись</p>
+        <ul class="social">
+            <li>
+                <a href="#"><span class="ico-fb"></span></a>
+            </li>
+            <li>
+                <a href="#"><span class="ico-vk"></span></a>
+            </li>
+            <li>
+                <a href="#"><span class="ico-gplus"></span></a>
+            </li>
+            <li>
+                <a href="#"><span class="ico-tw"></span></a>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="popup popup-willview" id="popup-willview">
+    <div class="popup-content">
+        <a class="close" href="#"><span class="ico-cancel"></span></a>
+
+        <p>Дякуємо, Ваша мрія буде розглянута адміністратором.</p>
+    </div>
+</div>
+<div class="popup popup-thanks" id="popup-thanks">
+    <div class="popup-content">
+        <a class="close" href="#"><span class="ico-cancel"></span></a>
+
+        <p>Дякуємо за вашу підтримку!</p>
+    </div>
+</div>

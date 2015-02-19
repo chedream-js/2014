@@ -1,0 +1,27 @@
+<div class="carosel" id="carousel" ng-init="chosen = 0; sliding()">
+    <ul class="carosel-nav">
+        <li ng-repeat="dream in doneDreams"
+            ng-click="changeChosen(dream); resetSliding()"
+            ng-class="doneDreams[chosen].id === dream.id ? 'active' : ''">
+
+            <h2>
+                <a href="#">{{dream.title}}</a>
+            </h2>
+        </li>
+    </ul>
+    <div class="carosel-inner">
+        <ul class="carosel-wrapper">
+            <li class="active"
+                ng-repeat="dream in doneDreams"
+                ng-show="doneDreams[chosen].id === dream.id">
+
+                <a href="#">
+                    <img ng-src="{{dream.url}}" alt="Carousel Picture">
+                </a>
+                <p class="dream-info">
+                    {{dream.completed_description}}
+                </p>
+            </li>
+        </ul>
+    </div>
+</div>
