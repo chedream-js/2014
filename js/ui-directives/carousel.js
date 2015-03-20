@@ -2,36 +2,45 @@ chedreamApp.directive('uiCarousel', function() {
     return {
         restrict: 'E',
         scope: {},
-        controller: function($scope, api, $interval, $state) {
-            api('/dreams?limit=4&status=compleated&sort_by=updatedAt&sort_order=DESC', 'carousel').then(function (data) {
-                $scope.doneDreams = data.dreams;
-                $scope.about = $scope.doneDreams.length == 0;
+        controller: function($scope, api, $state) {
+            api('/dreams?limit=4&status=compleated&sort_by=status_update&sort_order=DESC', 'carousel').then(function (data) {
+                $scope.doneDreams = data.items;
             });
 
-            $scope.changeChosen = function(el) {
-                //going to another page - dream
-//                if ($scope.doneDreams[$scope.chosen].id === el.id) {
-//                    $state.go('<some state>');
-//                }
-                for ($scope.chosen = 0; $scope.doneDreams[$scope.chosen].slug !== el.slug; $scope.chosen++) {}
-            };
+            $scope.doneDreams = [//fake
+                {
+                    slug: 'number1',
+                    title: 'first',
+                    url: 'images/carosel-item2.jpg',
+                    completed_description: 'qwe qwe qwe qwe qwe qwe qwe qwe qwe qwe qwe qwe qwe qwe qwe qwe qwe qwe qwe qwe qwe qwe qwe qwe qwe qwe qwe qwe qwe qwe qwe qwe qwe qwe qwe qwe qwe qwe qwe'
+                },
+                {
+                    slug: 'number2',
+                    title: 'second',
+                    url: 'images/dream-logo.jpg',
+                    completed_description: 'zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc qwe qwe qwe qwe qwe qwe qwe qwe qwe qwe qwe qwe qwe qwe qwe qwe qwe qwe qwe qwe qwe qwe qwe qwe qwe qwe'
+                },
+                {
+                    slug: 'number3',
+                    title: 'third',
+                    url: 'images/carosel-item1.jpg',
+                    completed_description: 'asd asd asd asd asd asd asd asd asd asd asd asd qwe qwe qwe qwe qwe qwe qwe qwe qwe qwe qwe qwe qwe qwe qwe qwe qwe qwe qwe qwe qwe qwe qwe qwe qwe qwe'
+                },
+                {
+                    slug: 'number4',
+                    title: 'fourth',
+                    url: 'images/img.png',
+                    completed_description: 'fgh fgh fgh fgh fgh fgh fgh fgh fgh fgh fgh fh fgh fgh qwe qwe qwe qwe qwe qwe qwe qwe qwe qwe qwe qwe qwe'
+                }
+            ];
 
-            var stop; //variable for interval function
-            $scope.sliding = function() {
-                stop = $interval(function() {
-                    $scope.chosen++;
-                    if ($scope.chosen > 3) {
-                        $scope.chosen = 0;
-                    }
-                }, 5000);
+            $scope.changeChosen = function(index, currentSlug) {
+                if ($scope.chosen == index) {
+                    $state.go( 'dream', { slug: currentSlug } );
+                } else {
+                    $scope.chosen = index;
+                }
             };
-            $scope.resetSliding = function() {
-                $interval.cancel(stop);
-                $scope.sliding();
-            };
-            angular.element( document.querySelector( '#carousel' ) ).on('$destroy', function() {
-                $interval.cancel(stop);
-            });
 
         },
         templateUrl: 'js/ui-directives/view/carousel.html'

@@ -1,22 +1,22 @@
 <ui-carousel></ui-carousel>
-<div dw-loading="dreams"">
+<div dw-loading="dreams">
     <section class="main-content">
         <ul class="dreams-preview">
             <li ng-repeat="dream in dreams()">
                 <span class="favorite"></span>
 
                 <h3>
-                    <a href="#">{{dream.title}}</a>
+                    <a ui-sref="dream({ slug: dream.slug })">{{dream.title}}</a>
                 </h3>
 
                 <div class="dreams-preview-container">
                     <div class="owner">
                         <img src="images/author.png" alt="Author avatar"><!-- ng-src="{{dream.avatar}}"-->
 
-                        <p><a href="#">Інна Кулік</a></p><!-- ng-src="{{dream.author}}"-->
+                        <p><a href="#">{{dream.author}}</a></p>
                     </div>
                     <span class="triangle"></span>
-                    <a href="#">
+                    <a ui-sref="dream({ slug: dream.slug })">
                         <img class="img-thumbnail" src="images/img.png" alt="Dream preview image"><!-- ng-src="{{dream.picture}}"-->
                     </a>
 
@@ -62,9 +62,10 @@
                         </svg>
                     </div>
                 </div>
-                <a class="btn-support" href="#">Підтримати</a>
+                <a class="btn-support" ui-sref="dream({ slug: dream.slug })">Підтримати</a>
             </li>
         </ul>
+        <span class="ico-spin5 animate-spin" ng-show="isMore()"></span>
     </section>
 
     <div class="popup popup-login" id="popup-login">

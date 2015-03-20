@@ -2,6 +2,9 @@ angular.module('routing', [
     'home.controller',
     'faq.controller',
     'contacts.controller',
+    'dream.controller',
+    'editDream.controller',
+    'addDream.controller',
     'profile.controller',
     'ui.router'
 ])
@@ -21,6 +24,21 @@ angular.module('routing', [
                 url: '/contacts',
                 templateUrl: 'js/contacts/view/contacts.html',
                 controller: 'ContactsCtrl'
+            })
+            .state('dream', {
+                url: '/dream/{slug}',
+                templateUrl: 'js/dream/view/dream.html',
+                controller: 'DreamCtrl'
+            })
+            .state('editDream', {
+                url: '/editDream/{slug}',
+                templateUrl: 'templates/dreamAction.html',
+                controller: 'EditDreamCtrl'
+            })
+            .state('addDream', {
+                url: '/addDream',
+                templateUrl: 'templates/dreamAction.html',
+                controller: 'AddDreamCtrl'
             })
             .state('profile', {
                 url: '/profile',

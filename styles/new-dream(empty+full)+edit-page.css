@@ -1,6 +1,6 @@
 
 /*--------------------------------------------------------------------*/
-/*---------------------------New-addDream(empty)------------------------------*/
+/*---------------------------New-dream(empty)------------------------------*/
 /*--------------------------------------------------------------------*/
 input:focus,
 textarea:focus {
@@ -23,7 +23,7 @@ textarea:focus {
 
 
 
-/*media*/ /*media*/ /*media*/ /*media*/ /*media*/ 
+/*media*/ /*media*/ /*media*/ /*media*/ /*media*/
 
 .bg-pages .media {
     text-align: center;
@@ -36,7 +36,7 @@ textarea:focus {
     width: 280px;
     height: 195px;
     position: relative;
-/*    display: none;*/
+    /*    display: none;*/
 }
 .close {
     cursor: pointer;
@@ -55,9 +55,9 @@ textarea:focus {
     cursor: pointer;
 }
 .bg-pages .media .uploaded-images {
-    margin: 9px -9px 0 0;  
+    margin: 9px -9px 0 0;
     overflow: hidden;
-/*    display: none;*/
+    /*    display: none;*/
 }
 .bg-pages .media .uploaded-images li {
     float: left;
@@ -67,9 +67,9 @@ textarea:focus {
     position: relative;
 }
 .bg-pages .media .uploaded-videos {
-    margin: 9px -9px 0 0;  
+    margin: 9px -9px 0 0;
     overflow: hidden;
-/*    display: none;*/
+    /*    display: none;*/
 }
 .bg-pages .media .uploaded-videos li {
     float: left;
@@ -80,8 +80,8 @@ textarea:focus {
 }
 
 .bg-pages .media .uploaded-docs {
-    margin: 9px 0 0;  
-/*    display: none;*/
+    margin: 9px 0 0;
+    /*    display: none;*/
 }
 .bg-pages .media .uploaded-docs li {
     text-align: left;
@@ -137,7 +137,7 @@ textarea:focus {
     border: 1px dashed #B8B8B8;
     font-size: 16px;
     color: #9B9B9B;
-/*    display: none;*/
+    /*    display: none;*/
 }
 .bg-pages .media .main-image label:hover {
     border: 1px dashed #37ACB1;
@@ -152,7 +152,7 @@ textarea:focus {
 .bg-pages .media .add-url {
     margin: 30px 0;
     overflow: hidden;
-/*    display: none;*/
+    /*    display: none;*/
 }
 .bg-pages .media .add-url input[type='url'] {
     display: block;
@@ -180,25 +180,25 @@ textarea:focus {
     width: 52px;
     height: 45px;
     margin: 0 18px;
-    background: url('../images/new-dream-download-sprite.png') top left no-repeat;    
+    background: url('../images/new-dream-download-sprite.png') top left no-repeat;
 }
 .bg-pages .media .image {
-    background-position: 0px 0;    
+    background-position: 0px 0;
 }
 .bg-pages .media .video {
-    background-position: -53px 0;    
+    background-position: -53px 0;
 }
 .bg-pages .media .document {
-    background-position: -106px 0;    
+    background-position: -106px 0;
 }
 .bg-pages .media .image:hover {
-    background-position: -159px 0;    
+    background-position: -159px 0;
 }
 .bg-pages .media .video:hover {
-    background-position: -211px 0;    
+    background-position: -211px 0;
 }
 .bg-pages .media .document:hover {
-    background-position: -265px 0;    
+    background-position: -265px 0;
 }
 .bg-pages .media .document {
     position: relative;
@@ -212,13 +212,13 @@ textarea:focus {
     top: -20px;
     left: -25px;
     width: 98px;
-    font-size: 12px; 
+    font-size: 12px;
 }
 
 /*discription*/  /*discription*/  /*discription*/
 
 .bg-pages .discription {
-    margin: 0 0 40px; 
+    margin: 0 0 40px;
 }
 
 .bg-pages .discription li {
@@ -235,7 +235,7 @@ textarea:focus {
     min-height: 123px;
     resize: none;
     font-size: 14px;
-    color: #464646; 
+    color: #464646;
     overflow: auto;
 }
 .wrapp-key-words {
@@ -253,7 +253,7 @@ textarea:focus {
     position: absolute;
     top: 28px;
     left: 3px;
-    
+
 }
 
 .bg-pages .discription .mark-key-word {
@@ -373,7 +373,7 @@ select {
     color: #464646;
 }
 .bg-pages .estimate .close-input:hover {
-    background: url(../images/close-doc-hover.png) center center no-repeat;    
+    background: url(../images/close-doc-hover.png) center center no-repeat;
 }
 .bg-pages .estimate input[type="text"] {
     font-size: 14px;
@@ -445,8 +445,10 @@ select {
 .new-dream-shadow{
     margin: 0;
     padding: 35px 0 0 0;
-    background: url(../images/section-shadow-green.png)center top no-repeat;    
+    background: url(../images/section-shadow-green.png)center top no-repeat;
 }
-
-
-
+.edit-page-shadow{
+    margin: 0;
+    padding: 35px 0 0 0;
+    background: url(../images/section-shadow-green.png)center top no-repeat;
+}

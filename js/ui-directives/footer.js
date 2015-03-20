@@ -1,6 +1,6 @@
 chedreamApp.directive('uiFooter', function() {
     return {
         restrict: 'E',
-        templateUrl: 'templates/footer.html'
+        templateUrl: 'js/ui-directives/view/footer.html'
     };
 });

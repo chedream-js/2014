@@ -1,1 +1,12 @@
-angular.module('addDream.model', []);
+angular.module('addDream.model', [
+    'cheDream.api'
+])
+    .factory('addDream', function () {
+
+        return {
+            getDream: function () {
+                return {};
+            }
+        };
+
+    });

@@ -1,11 +1,11 @@
-angular.module('editDream.model', [
+angular.module('dream.model', [
     'cheDream.api'
 ])
-    .factory('editDream', function (api, $stateParams) {
+    .factory('dream', function (api, $stateParams) {
 
         var dream = {};
 
-        api('/dreams/' + $stateParams.slug + '.json', 'editDream').then(function (data) {
+        api('/dreams/' + $stateParams.slug + '.json', 'dream').then(function (data) {
             dream = data;
         });
 

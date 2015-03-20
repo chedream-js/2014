@@ -2,6 +2,8 @@ angular.module('home.model', [
     'cheDream.api'
 ])
     .factory('dreams', function (api) {
+         var isMoreDreams = true;
+
          var dreams = [];
          api('/dreams.json?limit=8', 'dreams').then(function (data) {
             dreams = data.dreams;
@@ -18,25 +20,26 @@ angular.module('home.model', [
             }
         });
 
-//        TODO test it
         angular.element( window ).on('scroll', bindScroll);
         function bindScroll() {
             if ((window.innerHeight + window.scrollY) >= document.querySelector('.wrapper').offsetHeight - 100) {
-                var newDreams = {},
-                    apiString = '/dreams.json?limit=' + (dreams.length + 4);
-                api(apiString).then(function (data) {
+                var newDreams = {};
+                api('/dreams.json?limit=' + (dreams.length + 4), 'New Dreams').then(function (data) {
                     newDreams = data.dreams.splice(dreams.length, 4);
                 });
-                if (newDreams.length === dreams.length) {
-                    angular.element( document.querySelector('.ico-spin5.animate-spin') ).hide();
+                if (newDreams.length < 4) {
+                    isMoreDreams = false;
                 }
                 dreams.concat(newDreams);
             }
         }
 
         return {
-            getDreams: function () {
+            getDreams: function() {
                 return dreams;
+            },
+            getMoreDreams: function() {
+                return isMoreDreams;
             }
         };
 });

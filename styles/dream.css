@@ -1,0 +1,317 @@
+.dream-page {
+    overflow: hidden;
+    padding: 0;
+    background: #fff;
+}
+.dream-page .dream-logo {
+    display: block;
+    width: 649px;
+    float: left;
+}
+.dream-page .dream-video {
+    display: block;
+    overflow: hidden;
+    text-align: right;
+}
+.dream-page .dream-img {
+    overflow: hidden;
+}
+.dream-page .dream-img li {
+    float: right;
+    margin: -1px 0;
+}
+.dream-page aside {
+    clear: both;
+    float: left;
+    width: 280px;
+    margin: 30px 0 30px 30px;
+    position: relative;
+    padding: 24px 0 0;
+}
+.dream-page .dream-author-ava {
+    border: 1px solid #FFF;
+    position: absolute;
+    top: -65px;
+    left: -30px;
+}
+.dream-page .dream-author-name {
+    font: 16px "DaxPro-Bold";
+    position: absolute;
+    top: -5px;
+    left: 37px;
+}
+/*aside*/ /*aside*/ /*aside*/ /*aside*/ /*aside*/
+.dream-page .fund-raising {
+    display: block;
+    width: 210px;
+    margin: 3px auto 25px auto;
+    text-align: center;
+    padding: 10px 30px;
+    background: rgb(254,150,54); /* Old browsers */
+    background: linear-gradient(to bottom,  rgba(254,150,54,1) 0%,rgba(238,70,30,1) 100%);
+    font: 14px "DaxPro-Bold";
+    color: #FFF;
+}
+.dream-page .fund-raising:hover {
+    background: rgb(249,112,0); /* Old browsers */
+    background: linear-gradient(to bottom,  rgba(249,112,0,1) 0%,rgba(237,43,0,1) 100%); /* W3C */
+}
+
+.dream-page h2 {
+    font: 14px "DaxPro-Bold";
+    text-transform: uppercase;
+    color: #F2602C;
+    border-bottom: 1px solid #E1E1E1;
+    padding: 0 0 10px 0;
+    margin: 15px 0 16px 0;
+    /*    display: none;*/
+
+}
+aside .dream-support {
+    margin: 0 0 30px 0;
+    /*    display: none;*/
+}
+aside .dream-support li {
+    position: relative;
+}
+aside .dream-support li a {
+    color: #FFF;
+    font: 14px "DaxPro-Bold";
+    display: block;
+    border-radius: 20px 0 0 20px;
+    -moz-border-radius: 20px 0 0 20px;
+    -webkit-border-radius: 20px 0 0 20px;
+    margin: 0 0 5px 0;
+    height: 40px;
+    padding: 10px 0 0 47px;
+    background: rgb(254,150,54); /* Old browsers */
+    background: linear-gradient(to bottom,  rgba(254,150,54,1) 0%,rgba(238,70,30,1) 100%);
+}
+aside .dream-support li a:hover {
+    background: rgb(249,112,0); /* Old browsers */
+    background: linear-gradient(to bottom,  rgba(249,112,0,1) 0%,rgba(237,43,0,1) 100%); /* W3C */
+}
+aside .dream-support .circle {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    padding: 18px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+aside .dream-support .finance {
+    background:url(../images/dream-support-circle.png) -20px 7px no-repeat, linear-gradient(45deg,  rgba(247,127,51,1) 0%,rgba(253,164,71,1) 100%);
+}
+aside .dream-support .tools {
+    background:url(../images/dream-support-circle.png) -50px 7px no-repeat, linear-gradient(45deg,  rgba(247,127,51,1) 0%,rgba(253,164,71,1) 100%);
+}
+aside .dream-support .work{
+    background:url(../images/dream-support-circle.png) 10px 7px no-repeat, linear-gradient(45deg,  rgba(247,127,51,1) 0%,rgba(253,164,71,1) 100%);
+}
+aside .dream-support-text {
+    text-align: center;
+    margin: 0 0 10px 0;
+}
+aside .dream-support-number {
+    font: 40px "DaxPro-Bold";
+    color: #F15F2C;
+    margin: 0 0 0 10px;
+}
+aside .dream-estimate > li {
+    margin: 0 0 10px;
+    padding: 0 0 14px;
+    border-bottom: 1px solid #E1E1E1;
+}
+.dream-page .dream-estimate  h3 {
+    margin: 0 0 12px;
+    font: 14px "DaxPro-Bold";
+    padding: 6px 0 6px 30px;
+}
+.dream-page .dream-estimate h3 span {
+    font: 14px "DaxPro";
+    color: #464646;
+}
+aside .dream-estimate .finance {
+    background: url(../images/finance.png) left center no-repeat;
+}
+aside .dream-estimate .tools {
+    background: url(../images/tools.png) left center no-repeat;
+}
+aside .dream-estimate .work {
+    background: url(../images/works.png) left center no-repeat;
+}
+
+aside .dream-estimate .item-list li {
+    background: #F4F4F4;
+    margin: 0 0 2px 0;
+    overflow: hidden;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: flex;
+}
+aside .dream-estimate .item-list li:hover {
+    background: #FDE8E2;
+}
+
+aside .dream-estimate .dream-item {
+    float: left;
+    width: 140px;
+    font-size: 12px;
+    padding: 5px;
+}
+aside .dream-estimate .item-number {
+    text-align: right;
+    overflow: hidden;
+    font-size: 12px;
+    margin: auto 5px;
+    width: 140px;
+}
+aside .dream-estimate .already-have {
+    font-size: 12px;
+    font-weight: bold;
+    color: #000;
+}
+aside .dream-estimate .plus-add-help {
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+    background: #f2602c;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    margin: 0 0 0 8px;
+    color: #FFF;
+    text-align: center;
+    font-size: 17px;
+    cursor: pointer;
+}
+aside .dream-estimate .plus-add-help:hover {
+    background: #FFB21C;
+}
+.dream-page section {
+    float: right;
+    width: 590px;
+    margin: 30px 30px 30px 0;
+}
+.dream-page section article {
+    margin: 0 0 38px 0;
+}
+
+/*section*/ /*section*/ /*section*/ /*section*/
+
+.dream-page h1 {
+    font: 30px "DaxPro-Bold";
+    margin: 0 0 14px 0;
+    float: left;
+}
+.dream-page .description {
+    padding-bottom: 50px;
+    float: left;
+}
+.dream-page .dream-edit {
+    float: right;
+    background: url(../images/dream-edit.png) center center no-repeat;
+    width: 124px;
+    text-align: center;
+    font: 14px "DaxPro-Bold";
+    color: #EEE;
+    padding: 7px 0 7px 15px;
+    /*    display: none;*/
+}
+.dream-page .dream-edit:hover {
+    color: #FFF;
+}
+
+.dream-page .fund-raising-massage {
+    clear: both;
+    background: url(../images/dream-owner-triangle.jpg) left 18px no-repeat, rgb(255,217,70);
+    background: url(../images/dream-owner-triangle.jpg) left 18px no-repeat, linear-gradient(to right,  rgba(255,217,70,1) 0%,rgba(255,231,90,1) 100%); /* W3C */;
+    font-size: 14px;
+    padding: 19px;
+    line-height: 1.1;
+    margin: 0 0 15px 0;
+    /*    display: none;*/
+}
+
+.dream-page section article > p {
+    clear: both;
+    margin: 0 0 22px 0;
+    font-size: 14px;
+}
+.dream-page section .dream-participants {
+    overflow: hidden;
+}
+.dream-page section .dream-participants > li {
+    display: inline-block;
+    width: 282px;
+    margin: 0 10px 22px 0;
+    vertical-align: top;
+}
+.dream-page section .dream-participants > li img {
+    float: left;
+    margin: 0 13px 0 0;
+
+}
+.dream-page section .dream-participants h3 {
+    overflow: hidden;
+    margin: 0 0 8px 0;
+
+}
+.dream-page section .dream-participants h3 a {
+    font: 16px "DaxPro-Bold";
+}
+.dream-page section .dream-parti-list {
+    overflow: hidden;
+    font-size: 14px;
+    padding: 0 0 0 18px;
+    list-style-image: url(../images/list-marker.png);
+}
+
+
+/*soc-panel*/
+.contacts-panel {
+    overflow: hidden;
+    text-align: center;
+}
+.contacts-panel li {
+    display: inline-block;
+}
+.contacts-panel li span {
+    padding: 9px 0 0 0;
+    display: block;
+    height: 40px;
+    width: 40px;
+    background: none;
+}
+.contacts-panel li span:hover{
+    color: #fff;
+}
+
+.contacts-panel .ico-fb {
+    color: #2C4D98;
+}
+.contacts-panel .ico-vk {
+    color: #476C93;
+}
+.contacts-panel .ico-gplus {
+    color: #c43c2b;
+}
+.contacts-panel .ico-tw {
+    color: #28aae1;
+}
+.contacts-panel .ico-fb:hover {
+    background-color: #2C4D98;
+}
+.contacts-panel .ico-vk:hover {
+    background-color: #476C93;
+}
+.contacts-panel .ico-gplus:hover {
+    background-color: #c43c2b;
+}
+.contacts-panel .ico-tw:hover {
+    background-color: #28aae1;
+}

@@ -1,0 +1,126 @@
+<section class="bg-pages" ng-init="dream = currentDream()">
+    <form method="post">
+        <fieldset class="media">
+            <legend>Додати</legend>
+            <div class="main-image">
+                <div class="logo-container">
+                    <img src="images/add-logo.jpg" alt="" />
+                    <span class="close"></span>
+                </div>
+                <label for="main-image">Зображення<span>*</span></label>
+                <input id="main-image" type="file" name="main-image" />
+            </div>
+            <ul class="uploaded-images">
+                <li ng-repeat="photo in dream.photos">
+                    <img ng-src="{{photo}}" alt="" /><span class="close"></span>
+                </li>
+            </ul>
+            <ul class="uploaded-videos">
+                <li>
+                    <iframe width="135" height="94" src="https://www.youtube.com/embed/d5B_tOiLRq0?rel=0&amp;controls=0&amp;showinfo=0" allowfullscreen></iframe><span class="close"></span>
+                </li>
+            </ul>
+            <div class="add-url">
+                <label for="video">Youtube Url</label>
+                <input type="url" name="video" id="video" />
+                <input class="f-left green-button" type="button" value="Додати" />
+                <input class="f-right red-button" type="button" value="Відміна" />
+            </div>
+            <ul class="cont-addmedia">
+                <li class="addmedia image">
+                    <label for="image"></label>
+                    <input type="file" id="image" name="image" multiple />
+                </li>
+                <li class="addmedia video">
+
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset class="discription">
+            <ul>
+                <li><label for="dream-title">Назва<span>*</span></label><input class="dream-title" type="text" id="dream-title" name="dream-title" value="{{dream.title}}" required /></li>
+                <li><label for="discription">Опис<span>*</span></label><textarea id="discription" name="discription" required>{{dream.description}}</textarea></li>
+                <li class="wrapp-key-words">
+                    <label class="f-left" for="key-words">Ключові слова</label>
+                    <small>Відокремлювати комою</small>
+                    <input class="key-words" type="text" name="key-words" id="key-words" />
+                    <ul class="list-mark-key-words">
+                        <li class="mark-key-word">house <a href="#"></a></li><li class="mark-key-word">facade <a href="#"></a></li><li class="mark-key-word">conception <a href="#"></a></li>
+                    </ul>
+                </li>
+                <li><label  class="f-left" for="phone">Телефон<span>*</span></label>
+                    <ul class="phone-access">
+                        <li><input type="radio" id="all" name="phone-access" checked /><label for="all">Усім</label></li>
+                        <li><input type="radio" id="admin" name="phone-access" /><label for="admin">Тільки адміністратору</label></li>
+                    </ul>
+                    <input type="tel" name="phone" id="phone" required /></li>
+            </ul>
+        </fieldset>
+        <fieldset class="estimate">
+            <legend>Кошторис проекту</legend>
+            <ul>
+                <li>
+                    <fieldset>
+                        <legend class="finance">Фінансові витрати</legend>
+                        <ul>
+                            <li>
+                                <label class="labels w-item" for="item-of-costs">Стаття витрати</label><label class="labels" for="amount-of-costs">Сума, грн</label>
+                            </li>
+                            <li class="inputs">
+                                <input class="f-left left-col w-item" type="text" name="item-of-costs" id="item-of-costs" />
+                                <input class="right-col w-amount" type="text" name="amount-of-costs" id="amount-of-costs" />
+                                <span class="close-input"></span>
+                            </li>
+                            <li class="clear plus add-article"><button type="button"></button></li>
+                        </ul>
+                    </fieldset>
+                </li>
+                <li>
+                    <fieldset>
+                        <legend class="tools">Інструменти / обладнання техніка</legend>
+                        <ul>
+                            <li>
+                                <label class="labels w-title" for="tool-title">Назва</label><label class="labels w-unit" for="tool-unit">Од. виміру</label><label class="labels w-number" for="tool-number">Кільк.</label>
+                            </li>
+                            <li class="inputs">
+                                <input class="f-left left-col w-title" type="text" name="tool-title" id="tool-title" />
+                                <select class="right-col w-unit" name="tool-unit" id="tool-unit">
+                                    <option value="pcs">штука</option>
+                                    <option value="meter">метр</option>
+                                    <option value="kg">кг</option>
+                                    <option value="ton">тонна</option>
+                                    <option value="liter">литр</option>
+                                </select>
+
+                                <input class="f-right w-number" type="text" name="tool-number" id="tool-number" />
+                                <span class="close-input"></span>
+                            </li>
+                            <li class="clear plus add-article"><button type="button"></button></li>
+                        </ul>
+                    </fieldset>
+                </li>
+                <li>
+                    <fieldset>
+                        <legend class="works">Роботи та ресурси</legend>
+                        <ul>
+                            <li>
+                                <label class="labels w-title" for="work-title">Назва робіт</label><label class="labels w-unit" for="people">Чоловік</label><label class="labels w-number" for="days">Днів</label>
+                            </li>
+                            <li class="inputs">
+                                <input class="f-left left-col w-title" type="text" name="work-title" id="work-title" />
+                                <input class="right-col w-unit" type="text" name="people" id="people" />
+                                <input class="f-right w-number" type="text" name="days" id="days" />
+                                <span class="close-input"></span>
+                            </li>
+                            <li class="clear plus add-article"><button type="button"></button></li>
+                        </ul>
+                    </fieldset>
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset class="submit">
+            <button class="red-button" type="button" name="close-dream">Закрити проект</button>
+            <input class="green-button edit" type="submit" value="Зберегти" name="edit-dream" />
+        </fieldset>
+    </form>
+</section>

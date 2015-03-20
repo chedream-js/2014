@@ -1,6 +1,9 @@
 angular.module('editDream.controller', [
     'editDream.model'
 ])
-    .controller('EditDreamController', function() {
+    .controller('EditDreamCtrl', function($scope, editDream, $rootScope) {
+
+        $rootScope.title = 'Редагування мрії';
+        $scope.currentDream = editDream.getDream;
 
     });

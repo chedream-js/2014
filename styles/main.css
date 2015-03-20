@@ -215,11 +215,6 @@ a:link, a:hover {
 a:hover {
     color: #dd3509;
 }
-.bg-pages{
-    overflow: hidden;
-    padding: 0 30px;
-    background: #fff;
-}
 [class^="ico-"], [class*=" ico-"] {
     font-family: "icons";
     speak: none;
@@ -390,7 +385,7 @@ header .social li span {
     display: inline-block !important;
     height: 77px;
     margin-top: -1px;
-    padding: 0 47px 0 15px;
+    padding: 0 90px 0 15px;
     background: #333 url(../images/ico_search_act.png) no-repeat right 10px top 28px;
     color: #fff;
 }
@@ -605,7 +600,7 @@ ul.main-menu li:last-child {
 .carosel-nav li:nth-last-child(-n+2) {
     border-bottom: 0;
 }
-.carosel-nav li:hover, .carosel-nav .active {
+.carosel-nav .active {
     background: -webkit-linear-gradient(left,  #f1592a 0%,#fcb040 100%);
     background: -ms-linear-gradient(left,  #f1592a 0%,#fcb040 100%);
     background: -moz-linear-gradient(left, #f1592a 0%, #fcb040 100%);
@@ -621,7 +616,10 @@ ul.main-menu li:last-child {
     width: 242px;
     right: -12px;
 }
-.carosel-nav li:hover a, .carosel-nav .active a {
+.carosel-nav li:hover a {
+    color: #17d9a5;
+}
+.carosel-nav li.active:hover a, .carosel-nav .active a {
     color: #fff;
 }
 .carosel-nav a {
@@ -635,13 +633,14 @@ ul.main-menu li:last-child {
     margin: 0 auto;
     overflow: hidden;
 }
-.carosel-inner .carosel-wrapper {
-    position: relative;
-    width: 2000em;
+.carosel-wrapper {
+    overflow: visible !important;
 }
-.carosel-inner .active {
-    float: left;
-    position: relative;
+.carosel-wrapper > li {
+    height: auto !important;
+}
+.carosel-wrapper > li > div {
+    display: block;
 }
 .carosel-inner .active .dream-info {
     position: absolute;
@@ -652,21 +651,6 @@ ul.main-menu li:last-child {
     font-size: 14px;
     color: #fff;
     background: rgba(0,0,0,.25);
-}
-.animate-carousel {
-    -webkit-transition: all linear 0.5s;
-    transition: all linear 0.5s;
-}
-.animate-carousel.ng-hide {
-    margin-left: 500px;
-}
-.animate-carousel.ng-hide-add,
-.animate-carousel.ng-hide-remove,
-.animate-carousel.ng-hide-remove.ng-hide-remove-active {
-    margin-left: 0;
-}
-.animate-carousel.ng-hide-add.ng-hide-add-active {
-    margin-left: -500px;
 }
 .main-content {
     text-align: center;
